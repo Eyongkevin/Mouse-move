@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# After every 2 sec, move the mouse a fraction up and down.
+# -----------------
+# We use `--sync` option to let it wait until the mouse is actually moved
+x=2;
+y=3;
+while [ 1 ]; do
+  eval $(xdotool getmouselocation --shell);
+  xdotool mousemove --sync  $(($X+$x)) $(($Y+$y));
+  xdotool mousemove  --sync $X $Y;
+  #xdotool click 1
+  sleep 2
+
+  #xdotool click 1 &
+  #sleep 3
+ # mousemove 653 249
+done
+
+
+

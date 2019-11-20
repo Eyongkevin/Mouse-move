@@ -1,0 +1,9 @@
+********************* Updates **********************
+
+x- Move the mouse if mouse or keyboard has not been interacted with(display the mouse an inch and back to it initial position) for 3 seconds
+x- mouse move should be once every second to increase activity %
+- Mouse move is only active working when hubstaff(find ways to detect when hubstaff is on) is turn on
+- Add to bashrc so it can start authomatically when system starts
+
+
+
